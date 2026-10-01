@@ -1,0 +1,91 @@
+@charset "utf-8";
+@font-face { font-family: "HebStudy Greek"; src: url("../fonts/greek.ttf"); font-style: normal; font-weight: normal; }
+@font-face { font-family: "HebStudy Hebrew"; src: url("../fonts/hebrew.ttf"); font-style: normal; font-weight: normal; }
+@font-face { font-family: "HebStudy Display"; src: url("../fonts/display.ttf"); font-style: normal; font-weight: normal; }
+
+body { font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif; line-height: 1.5; margin: 0 4%; text-align: left; }
+p { margin: 0 0 0.75em 0; text-indent: 0; }
+
+/* ---------- headings ---------- */
+h1.chapter { font-family: "HebStudy Display", "Trajan Pro", Georgia, serif; font-weight: normal; font-size: 2.1em; letter-spacing: 0.08em; text-align: center; color: #7a5518; margin: 2.2em 0 0.1em 0; page-break-before: always; break-before: page; }
+p.chapter-title { text-align: center; font-style: italic; font-size: 1.35em; margin: 0 0 1.4em 0; color: #5a2a2a; }
+p.chapter-title::after { content: "◆"; display: block; font-style: normal; font-size: 0.6em; color: #b08a3c; margin-top: 0.6em; }
+div.chapter-intro { margin: 0 0 1.8em 0; }
+div.chapter-intro p:first-child::first-letter { font-size: 2.6em; float: left; line-height: 0.9; margin: 0.05em 0.08em 0 0; color: #7a5518; font-family: "HebStudy Display", Georgia, serif; }
+
+h2.section { font-size: 1.35em; font-weight: bold; text-align: center; color: #3b2a55; margin: 2.2em 0 0.6em 0; padding-top: 0.8em; border-top: 1px solid #b08a3c; page-break-after: avoid; break-after: avoid; }
+h2.section span.ref { display: block; font-weight: normal; font-size: 0.8em; color: #7a5518; margin-top: 0.2em; }
+p.continues { text-align: center; font-style: italic; font-size: 0.9em; color: #6b6b6b; }
+
+h3.sub { font-size: 1.12em; font-variant: small-caps; letter-spacing: 0.04em; color: #5a2a2a; margin: 1.6em 0 0.5em 0; border-bottom: 1px solid #d8c9a6; padding-bottom: 0.15em; page-break-after: avoid; break-after: avoid; }
+
+/* ---------- translation block ---------- */
+div.translation { margin: 1em 0 1.5em 0; padding: 0.8em 1em; background-color: rgba(176, 138, 60, 0.09); border-left: 3px solid #b08a3c; }
+div.translation p { margin-bottom: 0.6em; }
+p.tr-head { font-variant: small-caps; letter-spacing: 0.08em; font-weight: bold; color: #7a5518; margin-bottom: 0.4em; }
+sup.vn { font-size: 0.65em; font-weight: bold; color: #8a2b2b; vertical-align: super; line-height: 0; padding-right: 0.15em; }
+blockquote.oq { margin: 0.4em 0 0.6em 1.4em; font-style: italic; }
+blockquote.oq p { margin-bottom: 0.3em; }
+
+/* ---------- verse entries ---------- */
+div.verse { margin: 1.2em 0 1.6em 0; }
+h4.vhead { font-size: 1.05em; color: #8a2b2b; margin: 1.6em 0 0.3em 0; padding-bottom: 0.1em; border-bottom: 1px dotted #b08a3c; page-break-after: avoid; break-after: avoid; }
+p.vtext { font-style: italic; font-weight: bold; margin: 0.3em 0 0.9em 0; padding-left: 0.8em; border-left: 2px solid #8a2b2b; }
+
+/* ---------- boxes ---------- */
+div.wordstudy, div.background, div.ot, div.textnote, div.views { margin: 1em 0 1.1em 0; padding: 0.6em 0.9em 0.2em 0.9em; border-left: 4px solid #999; font-size: 0.95em; }
+div.wordstudy { border-left-color: #2f5d8a; background-color: rgba(47, 93, 138, 0.07); }
+div.background { border-left-color: #8a5a2b; background-color: rgba(138, 90, 43, 0.07); }
+div.ot { border-left-color: #3d7a4a; background-color: rgba(61, 122, 74, 0.07); }
+div.textnote { border-left-color: #6b6b6b; background-color: rgba(107, 107, 107, 0.07); }
+div.views { border-left-color: #6a3d8a; background-color: rgba(106, 61, 138, 0.07); }
+p.box-title { font-variant: small-caps; font-weight: bold; letter-spacing: 0.03em; margin-bottom: 0.4em; }
+div.wordstudy p.box-title { color: #2f5d8a; }
+div.background p.box-title { color: #8a5a2b; }
+div.ot p.box-title { color: #3d7a4a; }
+div.textnote p.box-title { color: #5b5b5b; }
+div.views p.box-title { color: #6a3d8a; }
+div.views ul, div.views ol { margin-top: 0.2em; }
+div.views li { margin-bottom: 0.4em; }
+
+/* ---------- reflection ---------- */
+ol.reflect { margin: 0.5em 0 1.5em 0; padding-left: 1.6em; }
+ol.reflect li { margin-bottom: 0.5em; }
+
+/* ---------- languages ---------- */
+.gk { font-family: "HebStudy Greek", "Gentium Plus", "SBL Greek", "Times New Roman", serif; font-style: normal; }
+.hb { font-family: "HebStudy Hebrew", "SBL Hebrew", "Ezra SIL", "Times New Roman", serif; font-style: normal; font-size: 1.12em; }
+i.tl { font-style: italic; }
+span.lord { font-variant: small-caps; }
+
+/* ---------- lists, tables ---------- */
+ul, ol { margin: 0.4em 0 0.9em 0; padding-left: 1.4em; }
+li { margin-bottom: 0.3em; }
+ol.outline li { margin-bottom: 0.6em; }
+ul.biblio { list-style: none; padding-left: 0; }
+ul.biblio li { padding-left: 1.5em; text-indent: -1.5em; margin-bottom: 0.5em; }
+table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em 0; font-size: 0.88em; }
+th { text-align: left; border-bottom: 2px solid #b08a3c; padding: 0.3em; vertical-align: bottom; }
+td { border-bottom: 1px solid #d8c9a6; padding: 0.35em 0.3em; vertical-align: top; }
+table.abbrev td:first-child { white-space: nowrap; font-weight: bold; padding-right: 1em; }
+
+/* glossary */
+div.gloss { margin: 0 0 1.1em 0; }
+p.gloss-term { font-weight: bold; margin-bottom: 0.2em; color: #3b2a55; }
+
+/* ---------- front matter ---------- */
+div.titlepage { text-align: center; margin-top: 18%; }
+p.tp-greek { font-size: 1.2em; letter-spacing: 0.25em; color: #7a5518; margin-bottom: 0.6em; }
+p.tp-title { font-family: "HebStudy Display", Georgia, serif; font-size: 3em; letter-spacing: 0.1em; color: #7a5518; margin: 0.2em 0; }
+p.tp-sub { font-style: italic; font-size: 1.3em; margin: 0.3em 0 2.5em 0; }
+p.tp-orn { color: #b08a3c; margin: 1em 0; }
+p.tp-author { font-size: 1em; margin-top: 3em; }
+div.copyright { font-size: 0.85em; margin-top: 10%; }
+div.copyright p { margin-bottom: 0.9em; }
+div.epigraph { text-align: center; font-style: italic; margin: 20% 8% 0 8%; }
+nav#toc ol, div.contents ol { list-style: none; padding-left: 0; }
+div.contents li.ch { margin-top: 0.8em; font-weight: bold; }
+div.contents li.ch ol { padding-left: 1.2em; font-weight: normal; }
+div.contents li.sec { margin: 0.15em 0; }
+div.contents a { text-decoration: none; }
+img.cover { display: block; width: 100%; height: auto; margin: 0; padding: 0; }
