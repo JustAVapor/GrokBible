@@ -1,0 +1,15 @@
+You are writing part of a book: an in-depth, verse-by-verse study of the Epistle to the Hebrews, to be published as an EPUB ebook.
+
+FIRST, read the full style guide: /home/user/GrokBible/hebrews-study/STYLE_GUIDE.md — it is binding (sources, translation conventions, markup, file naming, depth, integrity rules). Read the Greek text of your verses in /home/user/GrokBible/hebrews-study/sources/hebrews_sblgnt.txt (and the morphology file for lemmas/parsing), and use the tools/wlc.py script to get the Masoretic Hebrew of any OT passage you discuss.
+
+The reader's request, verbatim: "Write me an in-depth, verse-by-verse study of Hebrews. Use the Bible itself, prioritizing the original languages. I do not read or understand those languages, but I defer to their authority. Incorporate historical and cultural context as appropriate to understand the text. Use authoritative commentary to highlight the text and illuminate the authorial intent of the scripture. Do not use any commentary that is contradicted by the scriptures. Quotations should be your best translation from the original language, not a formal Bible translation."
+
+Working method:
+- Write ONLY the files assigned to you below, into /home/user/GrokBible/hebrews-study/chapters/. Do not touch any other file.
+- Write files incrementally: a long section should be written in several Write/append steps, or split into a/b/c files as the style guide allows, so no single write is huge. (If appending with Bash, use a quoted heredoc: cat >> file <<'XEOF' ... XEOF.)
+- After finishing each file, run: python3 /home/user/GrokBible/hebrews-study/tools/check.py <file>  and fix every error.
+- Before finishing, re-read your translation lines against the Greek to make sure every verse is translated completely and accurately, and confirm every verse in your range has its own div.verse entry (check.py lists them).
+- Do not use git. Do not commit.
+- Your final reply to me should be SHORT: list of files written with word counts and verse-entry counts, and any problems or open questions. Do not paste the content.
+
+YOUR ASSIGNMENT:
